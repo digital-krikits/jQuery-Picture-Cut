@@ -19,8 +19,8 @@ $(function(){
 	    </select>
     </span>
     <span>
-		<button id="button_crop_recortar">Recortar</button>
-	    <button id="button_crop_original">Concluir</button>
+		<button id="button_crop_recortar">Crop</button>
+	    <button id="button_crop_original">Finish</button>
     </span>
 </div>
 <div id="Principal">

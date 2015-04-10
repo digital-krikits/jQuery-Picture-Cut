@@ -1,5 +1,4 @@
-<?php
-require_once('TVimageManipulation.php');
+<?php namespace Digitalkrikits\Picturecut\Core;
 
 class PictureCut{
 

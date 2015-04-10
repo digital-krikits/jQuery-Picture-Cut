@@ -1,4 +1,5 @@
-<?php
+<?php namespace Digitalkrikits\Picturecut\Core;
+
  /**
   * TVimageManipulation.php
    	Copyright (c) 2013 Tuyoshi Vinicius (tuyoshi_vinicius@hotmail.com))
