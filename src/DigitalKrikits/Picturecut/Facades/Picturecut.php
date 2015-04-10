@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Facade;
 
-class Picturecut extends Facade {
+class Picturecut extends Facade
+{
 
     /**
      * Get the registered name of the component.

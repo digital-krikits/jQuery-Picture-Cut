@@ -8,7 +8,7 @@ class Picturecut
     public function __construct()
     {
         try {
-            $this->pictureCut = PictureCut::createSingleton();
+            $this->pictureCut = Core\PictureCut::createSingleton();
         } catch (\Exception $e) {}
     }
 

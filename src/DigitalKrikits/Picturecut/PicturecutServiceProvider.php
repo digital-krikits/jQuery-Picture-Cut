@@ -2,7 +2,8 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class PicturecutServiceProvider extends ServiceProvider {
+class PicturecutServiceProvider extends ServiceProvider
+{
 
     /**
      * Indicates if loading of the provider is deferred.
@@ -10,6 +11,7 @@ class PicturecutServiceProvider extends ServiceProvider {
      * @var bool
      */
     protected $defer = false;
+
     /**
      * Register the service provider.
      *
@@ -18,7 +20,7 @@ class PicturecutServiceProvider extends ServiceProvider {
 
     public function register()
     {
-        $this->app['picturecut'] = $this->app->share(function($app) {
+        $this->app['picturecut'] = $this->app->share(function ($app) {
             return new Picturecut();
         });
     }
@@ -26,11 +28,11 @@ class PicturecutServiceProvider extends ServiceProvider {
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/assets' => public_path('packages/digitalkrikits/picturecut'),
-            __DIR__.'/views' => base_path('resources/views/vendor/digitalkrikits/picturecut'),
+            __DIR__ . '/assets' => public_path('packages/digitalkrikits/picturecut'),
+            __DIR__ . '/views' => base_path('resources/views/vendor/digitalkrikits/picturecut'),
         ]);
 
-        $this->loadViewsFrom(__DIR__.'/views', 'picturecut');
+        $this->loadViewsFrom(__DIR__ . '/views', 'picturecut');
     }
 
     /**
